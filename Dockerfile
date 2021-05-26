@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN apt update && apt install -y build-essential && apt install -y g++
-COPY 4.1.cpp /
-COPY 4.2.cpp /
+RUN apt-get update && apt-get install -y g++
+COPY 6.cpp /
+
 
