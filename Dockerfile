@@ -1,8 +1,5 @@
 FROM ubuntu
-MAINTAINER Kseniya Kondenko
-RUN apt update 
-RUN apt install nano 
-RUN apt install fasm 
-RUN apt install binutils 
-RUN apt install gcc 
-RUN apt install g++
+RUN apt update && apt install -y build-essential && apt install -y g++
+COPY 4.1.cpp /
+COPY 4.2.cpp /
+
